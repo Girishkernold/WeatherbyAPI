@@ -1,0 +1,96 @@
+/* src/components/Weather.css */
+.weather-container {
+  display: flex;  /* Make it a flex container */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  height: 100vh;  /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+}
+
+.app-logo {
+  width: 100px; /* Adjust the size as needed */
+  margin-bottom: 20px; /* Space between the image and the title */
+}
+
+.content {
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid rgb(115, 101, 101);
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between the input and button */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-box button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dcef4d;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-box button:hover {
+  background-color: #b6ca83;
+}
+
+.search-icon {
+  width: 20px; /* Adjust the size as needed */
+  margin-right: 5px; /* Space between the image and the text */
+}
+
+.weather-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.weather-info h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* New styles for the transparent glass effect card */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #000; /* Black text for contrast */
+  margin-top: 20px; /* Additional spacing from top */
+}
+
+.glass-card h2 {
+  margin-top: 0;
+}
+
+.glass-card p {
+  margin: 5px 0;
+}
